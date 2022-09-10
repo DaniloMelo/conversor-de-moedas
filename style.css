@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(22, 25, 32);
+}
+
+.wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 315px;
+    height: 420px;
+    border-radius: 5%;
+    background: rgb(32, 34, 46);
+    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.8);
+}
+
+.title{
+    color: rgb(124, 130, 157);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dolar,
+.euro,
+.btc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 40px;
+    
+}
+
+.dolar__inp,
+.euro__inp,
+.btc__inp{
+    background: rgb(49, 55, 71);
+    border: 1px solid rgb(66, 75, 98);
+    border-radius: .5em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: rgb(141, 165, 227);
+    font-size: .8em;
+    letter-spacing: 1px;
+}
+
+.dolar__inp::placeholder,
+.euro__inp::placeholder,
+.btc__inp::placeholder{
+    text-align: center;
+    color: rgb(141, 165, 227);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+.wraper div:nth-child(4){
+    margin-bottom: 90px;
+}
+
+.dolar__equal,
+.euro__equal,
+.btc__equal{
+
+    font-size: 1.5em;
+    color: rgb(115, 115, 115);
+}
+
+.dolar__result,
+.euro__result,
+.btc__result{
+    font-size: 2em;
+    font-family: 'Caveat', cursive;
+    color: rgb(233, 123, 64);
+}
+
